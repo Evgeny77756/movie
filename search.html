@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="preload"
+      href="src/fonts/Lexend/Lexend-Light.ttf"
+      as="font"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="src/fonts/Lexend/Lexend-Medium.ttf"
+      as="font"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="src/fonts/Lexend/Lexend-SemiBold.ttf"
+      as="font"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/css/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <div class="flex">
+          <a href="index.html">
+            <img src="src/img/header-logo.svg" alt="logo" />
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="search">
+        <div class="container">
+          <div id="alert"></div>
+          <form action="search.html" class="search-form">
+            <div class="search-radio">
+              <input
+                type="radio"
+                id="movie"
+                autocomplete="off"
+                name="type"
+                value="movie"
+                checked
+              />
+              <label for="movie">Movies</label>
+              <input
+                type="radio"
+                id="tv"
+                name="type"
+                value="tv"
+                autocomplete="off"
+              />
+              <label for="tv">TV Shows</label>
+            </div>
+
+            <div class="flex">
+              <input
+                id="search-term"
+                name="search-term"
+                type="search"
+                class="search-input"
+                placeholder="Search"
+              />
+              <button type="submit" class="search-icon">
+                <img src="src/img/search.svg" alt="search" />
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <section class="search-results">
+        <div class="container">
+          <heading id="search-results-heading"></heading>
+          <div id="search-results" class="flex wrap">
+            <!-- Результаты поиска фильмов -->
+          </div>
+          <div id="pagination">
+            <!-- компонент пагинация  -->
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p class="footer-text">Films</p>
+      </div>
+    </footer>
+
+    <!-- Компонент спиннер (лоадер)  -->
+    <div class="spinner"></div>
+
+    <script type="module" src="src/js/index.js"></script>
+  </body>
+</html>

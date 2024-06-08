@@ -1,0 +1,30 @@
+.tv-list {
+  padding: 24px 0;
+}
+
+.popular-tv {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.tv {
+  width: 282px;
+  background: var(--dark-blue);
+  border-radius: 12px;
+  margin-bottom: 26px;
+  padding: 8px;
+}
+
+.tv img {
+  max-width: 100%;
+  border-radius: 12px;
+  min-height: 399px;
+}
+
+.tv-muted {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 32px;
+  color: var(--light-gray);
+}

@@ -1,0 +1,86 @@
+.tabs {
+  position: relative;
+}
+
+.tabs__list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: inline-flex;
+  background: var(--dark-blue);
+  backdrop-filter: blur(40px);
+  padding: 8px;
+  border-radius: 4px;
+  margin-bottom: 24px;
+}
+
+.tabs__btn {
+  background-color: transparent;
+  padding: 10px 17px 10px 17px;
+  color: var(--light-gray);
+  cursor: pointer;
+  border: 0;
+}
+
+.tabs__btn--active {
+  background: var(--purple);
+  border-radius: 4px;
+  color: var(--white);
+  pointer-events: none;
+}
+
+.tabs__content {
+  display: none;
+}
+
+.tabs__content--active {
+  display: block;
+}
+
+.popular-movies,
+.popular-shows {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  position: relative;
+  width: 282px;
+  background: var(--dark-blue);
+  box-sizing: border-box;
+  border-radius: 4px;
+  margin-bottom: 26px;
+  padding: 8px;
+}
+
+.card img {
+  max-width: 100%;
+  border-radius: 4px;
+  min-height: 399px;
+}
+
+.content__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.content__link {
+  padding: 14px;
+  width: 200px;
+  height: 120px;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: var(--white);
+}
+
+.content__text {
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--light-gray);
+}
